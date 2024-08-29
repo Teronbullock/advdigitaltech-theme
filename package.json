@@ -1,0 +1,39 @@
+{
+  "name": "adt",
+  "version": "0.0.1",
+  "description": "== adt ==",
+  "main": "index.js",
+  "scripts": {
+    "build": "wp-scripts build",
+    "build:sass": "sass --watch ./src/assets/sass/theme:./assets/css/ --style=compressed --no-source-map",
+    "build:sass:custom-block": "sass --watch ./src/assets/sass/custom-core-blocks:./assets/css/ --style=compressed --no-source-map",
+    "build:copy-fonts": "cp -r ./src/assets/fonts ./assets/",
+    "check-engines": "wp-scripts check-engines",
+    "check-licenses": "wp-scripts check-licenses",
+    "format": "wp-scripts format",
+    "lint:css": "wp-scripts lint-style",
+    "lint:js": "wp-scripts lint-js",
+    "lint:md:docs": "wp-scripts lint-md-docs",
+    "lint:pkg-json": "wp-scripts lint-pkg-json",
+    "packages-update": "wp-scripts packages-update",
+    "plugin-zip": "wp-scripts plugin-zip",
+    "start": "npm-run-all --parallel start:wp-scripts start:custom-webpack start:sass start:sass:custom-block start:copy-fonts",
+    "start:wp-scripts": "wp-scripts start",
+    "start:sass": "sass --watch ./src/assets/sass/theme:./assets/css/",
+    "start:sass:custom-block": "sass --watch ./src/assets/sass/custom-core-blocks:./assets/css/",
+    "start:custom-webpack": "wp-scripts start --config adt-custom-webpack-config.js",
+    "start:copy-fonts": "cp -r ./src/assets/fonts ./assets/",
+    "test:e2e": "wp-scripts test-e2e",
+    "test:unit": "wp-scripts test-unit-js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wordpress/scripts": "^28.6.0",
+    "sass": "^1.77.8"
+  },
+  "dependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}

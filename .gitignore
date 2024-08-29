@@ -1,0 +1,13 @@
+# Wordpress theme - .gitignore
+
+.DS_Store
+node_modules
+local-xdebuginfo.php
+.ftpquota
+error_log
+/db.php
+
+#server
+.htaccess.bk
+.private/
+default.php
