@@ -1,3 +1,8 @@
-
+/* ================================= 
+  Media Queries
+==================================== */
+.wp-block-site-title a {
+  text-decoration: none !important;
+}
 
 /*# sourceMappingURL=main-style.css.map */

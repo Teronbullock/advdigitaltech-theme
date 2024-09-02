@@ -1,0 +1,6 @@
+@use '../../00-helpers/inc' as inc;
+@use '../../00-helpers/variables' as var;
+
+.wp-block-site-title a {
+  text-decoration: none !important;
+}
