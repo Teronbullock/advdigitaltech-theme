@@ -30,12 +30,11 @@
     @media (min-width: var.$break-xxl) {
       @content;
     }
-  } @else if $break == 'xxxl' {
-    @media (min-width: var.$break-xxxl) {
+  } @else if $break == 'max' {
+    @media (min-width: var.$break-max) {
       @content;
     }
   }
-
 }
 
 // min width
@@ -65,8 +64,8 @@
     @media (max-width: var.$break-xxl) {
       @content;
     }
-  } @else if $break == 'xxxl' {
-    @media (max-width: var.$break-xxxl) {
+  } @else if $break == 'max' {
+    @media (max-width: var.$break-max) {
       @content;
     }
   }

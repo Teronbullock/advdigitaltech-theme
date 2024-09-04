@@ -1,3 +1,8 @@
 // 00-base
 @use './00-base/global';
 
+// 01-block-styles
+@use './01-block-styles/container';
+
+// 02-layout
+@use './02-layout/header';

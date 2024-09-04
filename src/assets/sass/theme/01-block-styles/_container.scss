@@ -1,0 +1,16 @@
+// -- block style container --
+@use '../../00-helpers/inc' as inc;
+
+.is-style-adt-container {
+  margin: 0 1rem;
+  max-width: 100%;
+  
+  @include inc.mq-up('xs') {
+    max-width: 100%;
+  }
+
+  @include inc.mq-up('max') {
+    margin: 0 auto;
+    max-width: 1600px;
+  }
+}

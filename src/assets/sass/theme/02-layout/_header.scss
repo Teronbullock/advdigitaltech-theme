@@ -1,0 +1,42 @@
+// adt-header
+@use '../../00-helpers/inc' as inc;
+
+.wp-block-site-title {
+  font-size: clamp(1rem, 4vw, 2rem);
+}
+
+.wp-block-site-title a {
+  text-decoration: none !important;
+}
+
+.adt-header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.adt-header__nav.wp-block-navigation {
+  margin-top: 0;
+  flex-basis: 35%;
+
+  @include inc.mq-up('md') {
+    flex-basis: 100%;
+  }
+}
+
+.wp-block-navigation__responsive-container-open:not(.always-shown) {
+  display: flex;
+
+  @include inc.mq-up('md') {
+    display: none;
+  }
+}
+
+.wp-block-navigation ul, .wp-block-navigation ul li,
+.wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+  display: none;
+
+  @include inc.mq-up('md') {
+    display: flex;
+  }
+}
